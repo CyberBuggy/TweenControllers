@@ -1,0 +1,9 @@
+{
+    "name": "com.cyberbuggy.tween-controllers",
+    "version": "1.0.0",
+    "displayName": "Tween Controllers",
+    "author": {
+        "name": "CyberBuggy"
+    },
+    "description": "Package of a custom easy integration with DOTween using Unity's component system"
+}
