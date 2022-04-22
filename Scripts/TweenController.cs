@@ -92,12 +92,12 @@ namespace CyberBuggy.TweenControllers
         public bool isInverted;
 
         [Header("Values")]
-        public float duration;
+        public float duration = 1;
         public float delay;
 
         [Header("Easing")]
-        public Ease easeType;
-        public float easeAmplitude;
+        public Ease easeType = Ease.OutQuad;
+        public float easeAmplitude = 1.70158f;
 
         public float easePeriod;
 
@@ -105,14 +105,6 @@ namespace CyberBuggy.TweenControllers
         [Header("Events")]
         public UnityEvent onTweenStarted;
         public UnityEvent onTweenFinished;
-
-        public static TweenSettings Default = new TweenSettings()
-        {
-            duration = 1,
-            easeType = Ease.InOutQuad,
-            easeAmplitude = 1.70158f,
-            easePeriod = 0
-        };
 
         public void ApplyTweenSettings(ref Tween tween)
         {
